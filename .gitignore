@@ -30,3 +30,5 @@ dragnuwa/svd/modules/distributions/__pycache__/__init__.cpython-38.pyc
 dragnuwa/svd/modules/distributions/__pycache__/distributions.cpython-38.pyc
 dragnuwa/svd/modules/encoders/__pycache__/__init__.cpython-38.pyc
 dragnuwa/svd/modules/encoders/__pycache__/modules.cpython-38.pyc
+*.pyc
+venv
