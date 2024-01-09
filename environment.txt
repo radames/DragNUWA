@@ -51,4 +51,5 @@ pyyaml
 pandas 
 einops 
 deepspeed
-gradio==3.50.2
+gradio==4.13.0
+huggingface-hub
