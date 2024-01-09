@@ -6,9 +6,11 @@ import uuid
 from scipy.interpolate import interp1d, PchipInterpolator
 import torchvision
 from utils import *
-
+from huggingface_hub import hf_hub_download
 output_dir = "outputs"
 ensure_dirname(output_dir)
+
+model_path = hf_hub_download(repo_id="yinsming/DragNUWA", filename="drag_nuwa_svd.pth")
 
 def interpolate_trajectory(points, n_points):
     x = [point[0] for point in points]
@@ -218,7 +220,7 @@ with gr.Blocks() as demo:
                     2.4. Click "Delete last step" to delete the lastest clicked control point.<br>
                 3. Animate the image according the path with a click on "Run" button. <br>""")
     
-    DragNUWA_net = Drag("cuda:0", 'models/drag_nuwa_svd.pth', 'DragNUWA_net.py', 320, 576, 14)
+    DragNUWA_net = Drag("cuda:0",  model_path, 'DragNUWA_net.py', 320, 576, 14)
     first_frame_path = gr.State()
     tracking_points = gr.State([])
 
