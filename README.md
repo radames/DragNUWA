@@ -4,13 +4,6 @@
 
 See our paper:   [DragNUWA: Fine-grained Control in Video Generation by Integrating Text, Image, and Trajectory](https://arxiv.org/abs/2308.08089)
 
-<a src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue" href="https://huggingface.co/spaces/yinsming/DragNUWA">
-    <img src="https://img.shields.io/badge/%F0%9F%A4%97-Open%20in%20Spaces-blue" alt="Open in Spaces">
-</a>
-<a src="https://colab.research.google.com/assets/colab-badge.svg" href="TOBEDONE">
-    <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open in Colab">
-</a>
-
 ### DragNUWA 1.5 (Updated on Jan 8, 2024)
 
 **DragNUWA 1.5** uses Stable Video Diffusion as a backbone to animate an image according to specific path.
